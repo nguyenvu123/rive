@@ -1,0 +1,48 @@
+.btn {
+    padding: 12px 10px;
+    color: #fff;
+    display: inline-block;
+    font-weight: bold;
+    transition: all .3s;
+    border: 1px solid transparent;
+
+    &.blue {
+        background-color: $blue;
+
+        &:hover {
+            border: 1px solid $blue;
+            color: $blue;
+            background-color: #fff;
+        }
+    }
+
+    &.blue2 {
+        background-color: $blue2;
+
+        &:hover {
+            border: 1px solid $blue2;
+            color: $blue2;
+            background-color: #fff;
+        }
+    }
+
+    &.orange {
+        background-color: $orange;
+
+        &:hover {
+            border: 1px solid $orange;
+            color: $orange;
+            background-color: #fff;
+        }
+    }
+}
+
+.btn-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+}

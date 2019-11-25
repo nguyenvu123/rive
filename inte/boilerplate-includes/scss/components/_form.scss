@@ -1,0 +1,27 @@
+.form-control {
+    width: 100%;
+    padding: 14px 15px;
+    border: 2px solid $gray3;
+}
+
+.form-group {
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $tablet-medium) {
+        margin-bottom: 30px;
+    }
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: $blue;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    padding: 16px 27px;
+    background-color: $gray3;
+    color: $blue;
+    font-weight: bold;
+}

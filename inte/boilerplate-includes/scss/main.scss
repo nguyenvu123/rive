@@ -1,0 +1,59 @@
+/* Compiled final .css file destination, relative to root directory. */
+/* This variable must be filled. */
+$output_path: '../web/app/themes/arp/assets/css/main.css';
+
+/* Every asset (image or font) called with the url() statement from an imported node_modules/*.css stylesheet will be automatically base64 encoded according to this weight limit (in KB). */
+/* If this variable is omitted or set to 0, it won't do anything at all. */
+$auto_base64_node_modules_css_weight_limit: 5;
+
+/* Enable or disable automatic conversion from px to rem units. */
+$transformPxToRem_prod: false;
+$transformPxToRem_dev: false;
+
+@import 'global/variables';
+
+@import 'bourbon';
+@import 'global/mixins';
+@import 'global/fonts';
+
+@import '../core/scss/global/normalize';
+
+//slick.scss
+@import '../../node_modules/slick-carousel/slick/slick.scss';
+//fancybox
+@import '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css';
+
+//magnific-popup.css
+//@import '../../node_modules/magnific-popup/dist/magnific-popup';
+
+@import 'global/layout';
+@import 'global/global';
+
+@import 'blocks/**/*.scss';
+@import 'components/**/*.scss';
+@import 'templates/**/*.scss';
+
+/*
+ /!\ REMINDER /!\
+
+ Use consistent media queries in the entire project.
+
+  @media screen and (min-width: $desktop-medium) {}
+  @media screen and (max-width: $desktop-medium) {}
+
+ If width = $desktop-medium, both rules will apply and this is not good.
+
+ Instead, do it this way :
+
+    @media screen and (min-width: $desktop-medium + 1) {}
+    @media screen and (max-width: $desktop-medium) {}
+
+ .. or this way :
+
+    @media screen and (min-width: $desktop-medium) {}
+    @media screen and (max-width: $desktop-medium - 1) {}
+
+  if you use media queries like that, you'll have to adapt variables.
+  We do not recommend this because it may become confusing when working on many projects.
+
+*/

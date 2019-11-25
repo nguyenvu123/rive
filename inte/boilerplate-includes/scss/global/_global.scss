@@ -1,0 +1,106 @@
+body {
+    font-family: $font-b; //Default font family
+    color: $blue; //Default text color
+    letter-spacing: normal; //Default letter spacing
+    font-size: 18px; //Default font size
+    line-height: 26px; //Default line height
+    font-weight: 400;
+}
+
+h1, .h1 {
+    font-size: 55px;
+    line-height: 65px;
+    font-weight: 300;
+}
+
+h2, .h2 {
+    font-size: 40px;
+    line-height: 59px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+h3, .h3 {
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 600;
+}
+
+.bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-blue {
+    background-color: $blue;
+    color: #fff;
+}
+
+.grid-row {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    .grid-col {
+        background-clip: initial;
+    }
+}
+
+.link-more {
+    position: relative;
+    color: $orange;
+    padding-bottom: 4px;
+    display: inline-block;
+    padding-right: 40px;
+    i{
+        position: absolute;
+        top: 4px;
+        right: 0;
+    }
+    &:hover,&:focus {
+        &::after {
+            right: 100%;
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 1px;
+        background-color: $orange;
+        transition: all .3s;
+    }
+}
+
+.social {
+    display: flex;
+
+    li {
+        color: #fff;
+        padding: 0 10px;
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: inherit;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        font-size: 24px;
+        transition: all .3s ease;
+
+        &:hover, &:focus {
+            background-color: #fff;
+            color: $blue;
+        }
+    }
+}

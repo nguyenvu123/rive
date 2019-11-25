@@ -1,0 +1,72 @@
+html {
+    &.open-menu {
+        overflow: hidden;
+    }
+}
+
+#header {
+    position: relative;
+    background-color: $blue;
+
+    &.is-active {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 999;
+        overflow-y: auto;
+
+        .ul-menu {
+            display: none;
+        }
+
+        .menu-main {
+            padding-top: 45px;
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .menu-main {
+        display: none;
+    }
+
+    .logo-menu {
+        max-width: 70px;
+        @media screen and (min-width: $desktop-small) {
+            margin-right: 40px;
+        }
+        @media screen and (min-width: $desktop-medium) {
+            margin-right: 60px;
+        }
+    }
+
+    .btn-collapse {
+        position: relative;
+        margin-left: auto;
+        top: -12px;
+    }
+
+    .ul-menu {
+        display: none;
+        @media screen and (min-width: $desktop-small) {
+           display: flex;
+        }
+        li {
+            font-size: 15px;
+            line-height: 20px;
+
+            @media screen and (min-width: $desktop-small) {
+                padding-right: 45px;
+            }
+            @media screen and (min-width: $desktop-medium) {
+                padding-right: 70px;
+            }
+
+            a {
+                padding: 17px 0;
+            }
+        }
+    }
+}
