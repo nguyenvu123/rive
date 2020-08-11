@@ -49,7 +49,7 @@
     "imagemin-zopfli": "~6.0.0",
     "intersection-observer": "~0.7.0",
     "is-my-json-valid": "^2.20.0",
-    "jquery": "~3.4.1",
+    "jquery": "~3.5.0",
     "jquery.resizeend": "~1.1.1",
     "jshint": "~2.10.2",
     "locale-code": "~2.0.2",
