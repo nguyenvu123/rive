@@ -29,6 +29,7 @@ web/app/themes/arp/assets/js/main.js.map
 web/wp
 web/.htaccess
 lang/
+lang2/
 
 # Logs
 *.log
