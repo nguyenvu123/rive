@@ -30,6 +30,7 @@ web/wp
 web/.htaccess
 lang/
 lang2/
+lang3/
 
 # Logs
 *.log
