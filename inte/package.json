@@ -70,7 +70,7 @@
     "prompt": "~1.0.0",
     "remove-leading-slash": "~1.0.1",
     "sass-lint": "~1.13.1",
-    "showdown": "~1.9.0",
+    "showdown": "~1.9.1",
     "tcp-port-used": "^1.0.1",
     "twig": "~1.13.3",
     "uglify-js": "~3.6.0",
